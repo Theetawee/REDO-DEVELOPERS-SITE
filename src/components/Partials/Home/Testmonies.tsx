@@ -7,7 +7,7 @@ import Customer2 from "../../../assets/cust.jpg";
 
 export default function Testmonies() {
   return (<div>
-      <MDBCarousel  touch={true}  interval={3000}>
+      <MDBCarousel  touch={true}  interval={5000}>
           <MDBCarouselItem itemId={1}>
               <Card
                   image={Customer1}
