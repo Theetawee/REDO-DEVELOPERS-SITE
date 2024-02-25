@@ -3,7 +3,11 @@ import Logo from "../../../assets/logo.svg";
 import { Link } from "react-router-dom";
 import AppBarLink from "./AppBarLink";
 import { Bars3Icon } from "@heroicons/react/24/outline";
+import { useContext } from "react";
+import { DrawerContext } from "../../../context/DrawerContext";
+import { XMarkIcon } from "@heroicons/react/20/solid";
 const Appbar = () => {
+    const {toggleSidebar,isOpen } = useContext(DrawerContext);
     return (
         <header className="bg-white border-b border-gray-100">
             <nav className="flex items-center p-4 max-w-screen-lg mx-auto justify-between">
@@ -32,12 +36,13 @@ const Appbar = () => {
                 </div>
                 <div className="flex items-center gap-x-6">
                     <div className="md:hidden">
-                        <button>
-                            <Bars3Icon className="w-6 h-6" />
+                        <button onClick={toggleSidebar} className="p-2 hover:bg-gray-50 rounded-md text-gray-600">
+                            {isOpen?(<XMarkIcon className="w-6 h-6" />):(
+                            <Bars3Icon className="w-6 h-6" />)}
                         </button>
                     </div>
                     <div>
-                        <button className="py-2 px-5 border-2 border-primary-400 rounded-md hover:bg-gradient-to-tr from-primary-300 to-primary-500 hover:text-white hover:border-primary-500 font-medium text-gray-700">
+                        <button className="py-2 px-5 border transition-all duration-500 ease-in-out border-primary-400 rounded hover:bg-primary-500 hover:text-white hover:border-primary-500 font-medium text-gray-700">
                             Contact us
                         </button>
                     </div>
