@@ -9,7 +9,7 @@ const HomePage = () => {
             description="Discover a transformative partnership with Redo Developers Inc. We're your trailblazing ally, delivering cutting-edge technology and innovative software solutions to propel businesses and individuals towards success in the dynamic digital landscape."
         >
             <section className="relative flex items-center justify-center h-[90vh] overflow-hidden">
-                <div className="absolute z-10 px-4 inset-0 flex items-center justify-center bg-gray-900/70">
+                <div className="absolute z-10 px-4 inset-0 flex items-center justify-center bg-primary-800/40">
                     <div className="text-center max-w-4xl mx-auto">
                         <p className="text-white text-4xl mb-6">
                             <span className="text-primary-400">
@@ -57,7 +57,7 @@ const HomePage = () => {
                     muted
                 />
             </section>
-            <section className="py-8 bg-gradient-to-tr from-orange-300/20 via-orange-400/30 to-orange-500/50  px-4">
+            <section className="py-8 bg-gray-50  px-4">
                 <WhatWedo />
             </section>
         </Seo>
