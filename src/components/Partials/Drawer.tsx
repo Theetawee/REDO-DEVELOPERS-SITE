@@ -18,7 +18,7 @@ const Drawer = () => {
 
             {/* Sidebar */}
             <aside
-                className={`fixed top-0 border-r-2 border-gray-100 dark:border-gray-800 left-0 z-50 w-[70%] md:hidden   h-screen transition-transform -translate-x-full ${
+                className={`fixed top-0 border-r-2 border-gray-100 dark:border-gray-800 left-0 z-50 w-[85%] md:hidden   h-screen transition-transform -translate-x-full ${
                     isOpen ? "translate-x-0" : "md:translate-x-0"
                 } `}
                 aria-label="Sidebar"
