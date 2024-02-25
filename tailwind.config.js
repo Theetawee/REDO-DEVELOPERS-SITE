@@ -4,6 +4,9 @@ export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
+            boxShadow: {
+                shadow: "3px 5px 6px -1px rgba(241, 131, 93, 0.7)",
+            },
             colors: {
                 primary: {
                     100: "#fce0d7",

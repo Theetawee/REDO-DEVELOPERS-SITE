@@ -1,5 +1,6 @@
 import Seo from "../components/utils/Seo";
 import Bg from "../assets/bg.mp4";
+import WhatWedo from "../components/Partials/Home/WhatWedo";
 
 const HomePage = () => {
     return (
@@ -42,6 +43,9 @@ const HomePage = () => {
                             <button className="border hover:bg-white/10 border-white text-white px-6 py-2.5 text-lg font-medium">
                                 Contact Us
                             </button>
+                            <button className="py-2.5 px-6 bg-primary-400 text-white ml-6 text-lg font-medium hover:bg-primary-500/80">
+                                View Pricing
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -53,8 +57,8 @@ const HomePage = () => {
                     muted
                 />
             </section>
-            <section className="py-8 px-4">
-                <h2 className="text-center text-2xl font-bold text-gray-600">What we do</h2>
+            <section className="py-8 bg-gradient-to-tr from-orange-300/20 via-orange-400/30 to-orange-500/50  px-4">
+                <WhatWedo />
             </section>
         </Seo>
     );
