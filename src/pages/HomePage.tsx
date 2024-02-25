@@ -1,7 +1,8 @@
 import Seo from "../components/utils/Seo";
 import Bg from "../assets/bg.mp4";
 import WhatWedo from "../components/Partials/Home/WhatWedo";
-
+import StatSect from "../components/Partials/Home/StatSect";
+import BgImage from "../assets/bg.png";
 const HomePage = () => {
     return (
         <Seo
@@ -59,6 +60,14 @@ const HomePage = () => {
             </section>
             <section className="py-8 bg-gray-50  px-4">
                 <WhatWedo />
+            </section>
+            <section
+                className=" min-h-screen bg-cover bg-no-repeat flex items-center justify-between"
+                style={{ backgroundImage: `url(${BgImage})` }}
+            >
+                <div className="w-full h-full py-16 px-4 bg-white/70">
+                    <StatSect />
+                </div>
             </section>
         </Seo>
     );
