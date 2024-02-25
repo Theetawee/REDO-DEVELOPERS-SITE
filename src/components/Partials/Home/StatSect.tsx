@@ -1,4 +1,5 @@
 import Customer from "../../../assets/cust.jpg";
+import Testmonies from "./Testmonies";
 
 const StatSect = () => {
     return (
@@ -14,7 +15,7 @@ const StatSect = () => {
                 overcome these obstacles and propel your goals forward.
             </p>
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <div className="flex py-4 flex-col md:flex-row items-center justify-center gap-8">
                 <div>
                     <img
                         src={Customer}
@@ -46,16 +47,25 @@ const StatSect = () => {
                             <p className="text-2xl md:text-3xl font-bold text-primary-400">
                                 20M+
                             </p>
-                            <p className="font-medium">Hours Saved for Clients</p>
+                            <p className="font-medium">
+                                Hours Saved for Clients
+                            </p>
                         </div>
                         <div className="text-center">
                             <p className="text-2xl md:text-3xl font-bold text-primary-400">
                                 200+
                             </p>
-                            <p className="font-medium">Satisfied Client Collaborations</p>
+                            <p className="font-medium">
+                                Satisfied Client Collaborations
+                            </p>
                         </div>
                     </div>
                 </div>
+            </div><hr />
+            <div className="pt-10">
+                <h2 className="text-3xl font-medium text-gray-700 text-center ">Testimonials: The Proof Is in the Praise</h2>
+                <p className="text-lg leading-3 text-gray-700 mb-8 text-center">What our clients have to say,real stories from our happy customers</p>
+                <Testmonies />
             </div>
         </div>
     );

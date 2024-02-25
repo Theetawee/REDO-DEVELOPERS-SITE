@@ -68,7 +68,8 @@ const HomePage = () => {
                 <div className="w-full h-full py-16 px-4 bg-white/70">
                     <StatSect />
                 </div>
-            </section>
+                            </section>
+
         </Seo>
     );
 };
