@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.appbar-link{
+    @apply text-gray-600 hover:bg-primary-100 px-4 py-2 rounded-full transition duration-300 ease-in-out;
+}
+
+.appbar-link.active{
+    @apply text-gray-700 font-medium py-1 px-2 hover:bg-white border-b-2 border-primary-500 rounded-none;
+}
