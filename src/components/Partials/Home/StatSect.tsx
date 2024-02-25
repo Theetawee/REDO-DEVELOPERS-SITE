@@ -64,7 +64,7 @@ const StatSect = () => {
             </div><hr />
             <div className="pt-10">
                 <h2 className="text-3xl font-medium text-gray-700 text-center ">Testimonials: The Proof Is in the Praise</h2>
-                <p className="text-lg leading-3 text-gray-700 mb-8 text-center">What our clients have to say,real stories from our happy customers</p>
+                <p className="italic text-gray-700 mb-8 text-center">What our clients have to say,real stories from our happy customers</p>
                 <Testmonies />
             </div>
         </div>
