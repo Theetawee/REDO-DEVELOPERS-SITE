@@ -3,7 +3,7 @@ import Testmonies from "./Testmonies";
 
 const StatSect = () => {
     return (
-        <div className="max-w-screen-xl mx-auto px-4 py-8">
+        <div className="max-w-screen-xl mx-auto py-8">
             <h2 className="text-4xl text-gray-700 font-bold mb-4 text-center">
                 Empowering Businesses and Individuals
             </h2>

@@ -14,8 +14,8 @@ const TestimonialCard = ({
     image: string;
 }) => {
     return (
-        <div className="max-w-lg mx-auto pb-4">
-            <div className="bg-white rounded-lg shadow overflow-hidden">
+        <div className="max-w-lg w-full py-4 px-2 mx-auto">
+            <div className="bg-white w-full rounded-xl shadow border border-gray-100 ring-0 ring-primary-500 overflow-hidden">
                 <div className="px-6 py-8">
                     <div className="flex items-center mb-4">
                         <img
