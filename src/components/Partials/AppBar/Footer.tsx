@@ -14,7 +14,7 @@ const Footer = () => {
               <FooterLink label="Privacy Policy" path="/privacy-policy" />
           </div>
           <div>
-              <p className="text-gray-600 font-medium">
+              <p className="text-gray-600 text-center font-medium">
                   Copyright© 2024, All rights reserved{" "}
                   <span className="text-primary-500">Redo Developers Inc.</span>
               </p>
