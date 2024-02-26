@@ -10,7 +10,7 @@ const Appbar = () => {
     const {toggleSidebar,isOpen } = useContext(DrawerContext);
     return (
         <header className="bg-white border-b border-gray-100">
-            <nav className="flex items-center p-4 max-w-screen-lg mx-auto justify-between">
+            <nav className="flex items-center px-4 py-2.5 max-w-screen-lg mx-auto justify-between">
                 <div>
                     <Link to={"/"} className="flex items-center gap-x-2">
                         <img
