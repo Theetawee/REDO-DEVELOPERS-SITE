@@ -65,11 +65,10 @@ const HomePage = () => {
                 className=" min-h-screen bg-cover bg-no-repeat flex items-center justify-between"
                 style={{ backgroundImage: `url(${BgImage})` }}
             >
-                <div className="w-full h-full py-16 px-4 bg-white/70">
+                <div className="w-full h-full py-8 px-4 bg-white/70">
                     <StatSect />
                 </div>
-                            </section>
-
+            </section>
         </Seo>
     );
 };
