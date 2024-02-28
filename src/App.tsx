@@ -4,7 +4,7 @@ import { lazy } from "react";
 
 const HomePage = lazy(()=>import('./pages/HomePage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
-
+const ContactPage = lazy(() => import('./pages/ContactPage'));
 
 
 
@@ -12,6 +12,7 @@ const router=createBrowserRouter(
   createRoutesFromElements(
     <Route element={<MainLayout/>}>
       <Route path="/" element={<HomePage />} />
+      <Route path="/contact" element={<ContactPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>
   )

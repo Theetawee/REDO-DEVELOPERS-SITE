@@ -1,12 +1,20 @@
 import AppBarDropDown from "./AppBarDropDown";
 import Logo from "../../../assets/logo.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import AppBarLink from "./AppBarLink";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import { useContext } from "react";
 import { DrawerContext } from "../../../context/DrawerContext";
 import { XMarkIcon } from "@heroicons/react/20/solid";
+
+
+
+
+
+
 const Appbar = () => {
+    const location = useLocation();
+
     const {toggleSidebar,isOpen } = useContext(DrawerContext);
     return (
         <header className="bg-white border-b border-gray-100">
@@ -23,29 +31,46 @@ const Appbar = () => {
                         </span>
                     </Link>
                 </div>
-                <div className="items-center hidden md:flex gap-x-6">
-                    <div>
-                        <AppBarLink label="Home" path="/" />
+                {location.pathname !== "/contact" && (
+                    <div className="items-center hidden md:flex gap-x-6">
+                        <div>
+                            <AppBarLink label="Home" path="/" />
+                        </div>
+                        <div>
+                            <AppBarDropDown />
+                        </div>
+                        <div>
+                            <AppBarLink label="Carrers" path="/carrers" />
+                        </div>
                     </div>
-                    <div>
-                        <AppBarDropDown />
-                    </div>
-                    <div>
-                        <AppBarLink label="Carrers" path="/carrers" />
-                    </div>
-                </div>
+                )}
                 <div className="flex items-center gap-x-6">
                     <div className="md:hidden">
-                        <button onClick={toggleSidebar} className="p-2 hover:bg-gray-50 rounded-md text-gray-600">
-                            {isOpen?(<XMarkIcon className="w-6 h-6" />):(
-                            <Bars3Icon className="w-6 h-6" />)}
+                        <button
+                            onClick={toggleSidebar}
+                            className="p-2 hover:bg-gray-50 rounded-md text-gray-600"
+                        >
+                            {isOpen ? (
+                                <XMarkIcon className="w-6 h-6" />
+                            ) : (
+                                <Bars3Icon className="w-6 h-6" />
+                            )}
                         </button>
                     </div>
-                    <div>
-                        <button className="py-2 px-5 border transition-all duration-500 ease-in-out border-primary-400 rounded hover:bg-primary-500 hover:text-white hover:border-primary-500 font-medium text-gray-700">
-                            Contact us
-                        </button>
-                    </div>
+                    {location.pathname === "/contact" ? (
+                        <div>
+                            <a href="tel:+256779730256" className="text-gray-700 font-medium">+256-779730256</a>
+                        </div>
+                    ) : (
+                        <div>
+                            <Link
+                                to="/contact"
+                                className="py-2 px-5 border transition-all duration-500 ease-in-out border-primary-400 rounded hover:bg-primary-500 hover:text-white hover:border-primary-500 font- text-gray-700"
+                            >
+                                Contact us
+                            </Link>
+                        </div>
+                    )}
                 </div>
             </nav>
         </header>
