@@ -3,6 +3,7 @@ import Bg from "../assets/bg.mp4";
 import WhatWedo from "../components/Partials/Home/WhatWedo";
 import StatSect from "../components/Partials/Home/StatSect";
 import BgImage from "../assets/bg.png";
+import { Link } from "react-router-dom";
 const HomePage = () => {
     return (
         <Seo
@@ -41,9 +42,9 @@ const HomePage = () => {
                             software solutions built for success.
                         </p>
                         <div className="flex items-center justify-center">
-                            <button className="border hover:bg-white/10 border-white text-white px-6 py-2.5 text-lg font-medium">
+                            <Link to="/contact" className="border hover:bg-white/10 border-white text-white px-6 py-2.5 text-lg font-medium">
                                 Contact Us
-                            </button>
+                            </Link>
                             <button className="py-2.5 px-6 bg-primary-400 text-white ml-6 text-lg font-medium hover:bg-primary-500/80">
                                 View Pricing
                             </button>
