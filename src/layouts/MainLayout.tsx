@@ -4,15 +4,19 @@ import Appbar from "../components/Partials/AppBar/Appbar";
 import DrawerProvider from "../context/DrawerContext";
 import Drawer from "../components/Partials/Drawer";
 import Footer from "../components/Partials/AppBar/Footer";
-
+import SuspenseLoader from "../components/utils/SuspenseLoader";
 const MainLayout = () => {
     return (
         <HelmetProvider>
             <DrawerProvider>
                 <Appbar />
-                <Drawer/>
-                <Outlet />
-                <Footer/>
+                <Drawer />
+                <main className="min-h-screen">
+                    <SuspenseLoader>
+                    <Outlet />
+                    </SuspenseLoader>
+                </main>
+                <Footer />
             </DrawerProvider>
         </HelmetProvider>
     );
