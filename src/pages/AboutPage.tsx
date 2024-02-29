@@ -1,7 +1,7 @@
 import Seo from "../components/utils/Seo";
 import Logo from "../assets/logo.svg"
 import { Link } from "react-router-dom";
-
+import Hero from "../assets/hero.webp";
 const AboutPage = () => {
     return (
         <Seo
@@ -172,7 +172,7 @@ const AboutPage = () => {
 
                     <div className="md:w-1/2">
                         <img
-                            src={Logo}
+                            src={Hero}
                             alt="Redo Developers"
                             className="w-full h-72 object-cover rounded-md"
                         />
