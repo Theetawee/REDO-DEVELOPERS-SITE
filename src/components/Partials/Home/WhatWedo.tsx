@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const WhatWedo = () => {
     return (
         <div>
@@ -18,9 +20,9 @@ const WhatWedo = () => {
                     </p>
                 </div>
                 <div className="w-full md:ml-4 flex items-center justify-center">
-                    <button className="bg-gray-900 hover:bg-gray-900/90 font-medium text-lg px-6 py-2.5 text-white">
+                    <Link to={"/services"} className="bg-gray-900 hover:bg-gray-900/90 font-medium text-lg px-6 py-2.5 text-white">
                         Expolre&nbsp;services
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
