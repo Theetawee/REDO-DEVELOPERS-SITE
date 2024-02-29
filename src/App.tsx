@@ -9,7 +9,7 @@ const CarrersPage = lazy(() => import('./pages/CarrersPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 const ProfilePage = lazy(() => import('./pages/ProfilePage'));
 const CEOPage = lazy(() => import('./pages/CEOPage'));
-
+const AboutPage = lazy(() => import('./pages/AboutPage'));
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route element={<MainLayout/>}>
@@ -19,6 +19,7 @@ const router=createBrowserRouter(
       <Route path="/products" element={<ServicesPage />} />
       <Route path="/profiles" element={<ProfilePage />} />
       <Route path="/profiles/ceo" element={<CEOPage />} />
+      <Route path="/about" element={<AboutPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>
   )

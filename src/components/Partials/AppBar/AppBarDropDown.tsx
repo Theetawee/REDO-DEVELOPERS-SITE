@@ -75,7 +75,7 @@ export default function AppBarDropDown() {
                                             </Popover.Button>
                                         </div>
                                         <Popover.Button as={Link}
-                                            to="/about-us"
+                                            to="/about"
                                             className="flow-root  rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
                                         >
                                             <span className="flex items-center">
