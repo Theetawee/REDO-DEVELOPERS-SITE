@@ -1,6 +1,7 @@
 import Seo from "../components/utils/Seo"
 import CallCenter from "../assets/call.jfif"
 import { PhoneIcon,EnvelopeIcon } from "@heroicons/react/20/solid";
+import ContactForm from "../components/Partials/ContactForm";
 const ContactPage = () => {
     return (
         <Seo
@@ -94,7 +95,7 @@ const ContactPage = () => {
                             reply from our dedicated support team with our best
                             possible solutions.
                         </p>
-                        {/* You can add contact form or contact information here */}
+                        <ContactForm/>
                     </div>
                 </div>
             </section>
