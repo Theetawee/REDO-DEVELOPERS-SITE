@@ -5,7 +5,7 @@ import { lazy } from "react";
 const HomePage = lazy(()=>import('./pages/HomePage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
-
+const CarrersPage = lazy(() => import('./pages/CarrersPage'));
 
 
 const router=createBrowserRouter(
@@ -13,6 +13,7 @@ const router=createBrowserRouter(
     <Route element={<MainLayout/>}>
       <Route path="/" element={<HomePage />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/carrers" element={<CarrersPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>
   )
