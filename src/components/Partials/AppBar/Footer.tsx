@@ -93,7 +93,7 @@ const Footer = () => {
                         Redo Developers Inc.
                     </Link>
                     <p className="text-sm text-gray-700">
-                        &copy; 2021-2023 Redo Developers Inc. All Rights
+                        &copy; 2021-2024 Redo Developers Inc. All Rights
                         Reserved.
                     </p>
                 </div>
