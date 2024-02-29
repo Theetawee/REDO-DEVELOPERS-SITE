@@ -37,9 +37,12 @@ export default function AppBarDropDown() {
                                         style={{ backgroundColor: "snow" }}
                                     >
                                         <div className="grid grid-cols-2 gap-4 mb-8">
-                                            <Link
+                                            <Popover.Button
+                                                className={
+                                                    "flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
+                                                }
+                                                as={Link}
                                                 to="/products"
-                                                className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
                                             >
                                                 <span className="flex items-center">
                                                     <span className="text-sm font-medium text-gray-900">
@@ -52,8 +55,8 @@ export default function AppBarDropDown() {
                                                     expert services offered by
                                                     Redo Developers Inc
                                                 </span>
-                                            </Link>
-                                            <Link
+                                            </Popover.Button>
+                                            <Popover.Button as={Link}
                                                 to="/profiles"
                                                 className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
                                             >
@@ -69,9 +72,9 @@ export default function AppBarDropDown() {
                                                     growth of Redo Developers
                                                     Inc.
                                                 </span>
-                                            </Link>
+                                            </Popover.Button>
                                         </div>
-                                        <Link
+                                        <Popover.Button as={Link}
                                             to="/about-us"
                                             className="flow-root  rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
                                         >
@@ -84,7 +87,7 @@ export default function AppBarDropDown() {
                                                 Learn more about the roots and
                                                 visions of Redo Developers Inc.
                                             </span>
-                                        </Link>
+                                        </Popover.Button>
                                     </div>
                                 </div>
                             </Popover.Panel>
