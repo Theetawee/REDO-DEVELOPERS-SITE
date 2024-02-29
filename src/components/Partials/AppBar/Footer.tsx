@@ -11,6 +11,14 @@ const Footer = () => {
                         <ul className="text-gray-700">
                             <li className="mb-3">
                                 <Link
+                                    to="/products"
+                                    className="hover:text-primary-500 text-sm"
+                                >
+                                    Products and Services
+                                </Link>
+                            </li>
+                            <li className="mb-3">
+                                <Link
                                     to="/about"
                                     className="hover:text-primary-500 text-sm"
                                 >
@@ -58,7 +66,6 @@ const Footer = () => {
                     <div>
                         <h5 className="text-lg font-medium mb-2">Relations</h5>
                         <ul className="text-gray-700">
-
                             <li className="mb-3">
                                 <Link
                                     to="/profiles"
@@ -67,7 +74,6 @@ const Footer = () => {
                                     Profiles
                                 </Link>
                             </li>
-
                         </ul>
                     </div>
                 </div>

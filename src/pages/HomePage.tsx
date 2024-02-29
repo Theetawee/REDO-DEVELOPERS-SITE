@@ -45,9 +45,9 @@ const HomePage = () => {
                             <Link to="/contact" className="border hover:bg-white/10 border-white text-white px-6 py-2.5 text-lg font-medium">
                                 Contact Us
                             </Link>
-                            <button className="py-2.5 px-6 bg-primary-400 text-white ml-6 text-lg font-medium hover:bg-primary-500/80">
+                            <Link to={"/products"} className="py-2.5 hidden sm:block px-6 bg-primary-400 text-white ml-6 text-lg font-medium hover:bg-primary-500/80">
                                 Services and Products
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
