@@ -1,4 +1,4 @@
-import Customer from "../../../assets/cust.jpg";
+import Customer from "../../../assets/cust.webp";
 import Testmonies from "./Testmonies";
 
 const StatSect = () => {

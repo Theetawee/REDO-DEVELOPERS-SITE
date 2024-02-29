@@ -1,5 +1,5 @@
 import Seo from "../components/utils/Seo"
-import CallCenter from "../assets/call.jfif"
+import CallCenter from "../assets/call.webp"
 import { PhoneIcon,EnvelopeIcon } from "@heroicons/react/20/solid";
 // import ContactForm from "../components/Partials/ContactForm";
 const ContactPage = () => {

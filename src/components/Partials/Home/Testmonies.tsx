@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import User from "../../../assets/twitter-avi-gender-balanced-figure.png";
+import User from "../../../assets/user.webp";
 import "swiper/css";
 import Card from "./Card";
 

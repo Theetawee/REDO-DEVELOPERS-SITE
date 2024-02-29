@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Seo from "../components/utils/Seo";
-import Founder from "../assets/thoe.png";
+import Founder from "../assets/thoe.webp";
 const ProfilePage = () => {
     return (
         <Seo
