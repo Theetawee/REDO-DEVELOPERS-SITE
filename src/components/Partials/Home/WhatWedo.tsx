@@ -20,7 +20,7 @@ const WhatWedo = () => {
                     </p>
                 </div>
                 <div className="w-full md:ml-4 flex items-center justify-center">
-                    <Link to={"/services"} className="bg-gray-900 hover:bg-gray-900/90 font-medium text-lg px-6 py-2.5 text-white">
+                    <Link to={"/products"} className="bg-gray-900 hover:bg-gray-900/90 font-medium text-lg px-6 py-2.5 text-white">
                         Expolre&nbsp;services
                     </Link>
                 </div>
