@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { DrawerContext } from "../../context/DrawerContext";
-import SuspenseLoader from "../utils/SuspenseLoader";
+import AppBarLink from "./AppBar/AppBarLink";
 
 const Drawer = () => {
     const { isOpen, toggleSidebar } = useContext(DrawerContext);
@@ -31,11 +31,16 @@ const Drawer = () => {
                         onClick={toggleSidebar}
                         className="justify-center text-center flex items-center mb-8"
                     >
-                        l
+                        Menu
                     </Link>
-
-                    {/* Lazy-loaded Sidebar */}
-                    <SuspenseLoader>Asid</SuspenseLoader>
+                    <div className="flex flex-col gap-y-4">
+                        <AppBarLink label="Home" path="/" />
+                        <AppBarLink label="About Us" path="/about" />
+                        <AppBarLink label="Services and Products" path="/products" />
+                        <AppBarLink label="Contact Us" path="/contact" />
+                        <AppBarLink label="Company Profiles" path="/profiles" />
+                        <AppBarLink label="Carrers" path="/carrers" />
+                        </div>
                 </div>
             </aside>
         </>
