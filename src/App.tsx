@@ -6,7 +6,7 @@ const HomePage = lazy(()=>import('./pages/HomePage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const CarrersPage = lazy(() => import('./pages/CarrersPage'));
-
+const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 
 const router=createBrowserRouter(
   createRoutesFromElements(
@@ -14,6 +14,7 @@ const router=createBrowserRouter(
       <Route path="/" element={<HomePage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/carrers" element={<CarrersPage />} />
+      <Route path="/products" element={<ServicesPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>
   )

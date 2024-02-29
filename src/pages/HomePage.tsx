@@ -46,7 +46,7 @@ const HomePage = () => {
                                 Contact Us
                             </Link>
                             <button className="py-2.5 px-6 bg-primary-400 text-white ml-6 text-lg font-medium hover:bg-primary-500/80">
-                                View Pricing
+                                Services and Products
                             </button>
                         </div>
                     </div>
