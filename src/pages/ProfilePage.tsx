@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Seo from "../components/utils/Seo";
-
+import Founder from "../assets/thoe.png";
 const ProfilePage = () => {
     return (
         <Seo
@@ -19,7 +19,7 @@ const ProfilePage = () => {
                         <Link to="/profiles/ceo" className="block">
                         <div className="max-w-sm bg-white shadow rounded-xl p-4">
                             <img
-                                src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                src={Founder}
                                 className="w-40 h-40 mx-auto object-cover rounded-full mb-8"
                                 alt="Khaotungkulmethee Pattawee Drake"
                             />

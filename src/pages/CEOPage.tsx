@@ -1,6 +1,6 @@
 import Seo from "../components/utils/Seo";
 import { Link } from "react-router-dom";
-
+import Founder from "../assets/thoe.png";
 
 const FounderPage = () => {
     return (
@@ -14,7 +14,7 @@ const FounderPage = () => {
                         <div>
                             <div className="relative">
                                 <img
-                                    src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                    src={Founder}
                                     className="w-96 h-96 rounded-full mx-auto"
                                     alt="Founder of Redo Developers Inc. Khaotungkulmethee Pattawee Drake"
                                 />
