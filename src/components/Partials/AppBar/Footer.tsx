@@ -58,24 +58,16 @@ const Footer = () => {
                     <div>
                         <h5 className="text-lg font-medium mb-2">Relations</h5>
                         <ul className="text-gray-700">
-                            <p>Profiles</p>
 
                             <li className="mb-3">
                                 <Link
-                                    to="/profiles/founder"
+                                    to="/profiles"
                                     className="hover:text-primary-500 text-sm"
                                 >
-                                    Founder
+                                    Profiles
                                 </Link>
                             </li>
-                            <li className="mb-3">
-                                <Link
-                                    to="/meeting"
-                                    className="hover:text-primary-500 text-sm"
-                                >
-                                    Demo
-                                </Link>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
