@@ -7,6 +7,7 @@ const ContactForm = () => {
           <form method="post" className="grid grid-cols-1 gap-6">
               <Input
                   id="name"
+                  auto_on={false}
                   disabled={isLoading}
                   name="name"
                   label="Your Name"
@@ -14,6 +15,7 @@ const ContactForm = () => {
               />
               <Input
                   id="email"
+                  auto_on={false}
                   disabled={isLoading}
                   name="email"
                   label="Your Email Address"
@@ -23,6 +25,7 @@ const ContactForm = () => {
               <textarea
                   id="message"
                   rows={4}
+                  
                   className="block focus:ring-primary-500 p-2.5 w-full text-sm text-gray-900 bg-white rounded border border-gray-300  focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                   placeholder="Your Message"
               ></textarea>
