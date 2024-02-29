@@ -2,9 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import User from "../../../assets/twitter-avi-gender-balanced-figure.png";
 import "swiper/css";
 import Card from "./Card";
-// import Customer1 from "../../../assets/cloud.jpg";
-// import Customer2 from "../../../assets/cust.jpg";
-// import { Autoplay } from "swiper/modules";
 
 export default function Testmonies() {
     return (
