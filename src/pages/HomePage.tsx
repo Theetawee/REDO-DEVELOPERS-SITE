@@ -2,7 +2,7 @@ import Seo from "../components/utils/Seo";
 import Bg from "../assets/bg.mp4";
 import WhatWedo from "../components/Partials/Home/WhatWedo";
 import StatSect from "../components/Partials/Home/StatSect";
-import BgImage from "../assets/bg.png";
+import BgImage from "../assets/bg.mp4";
 import { Link } from "react-router-dom";
 const HomePage = () => {
     return (
