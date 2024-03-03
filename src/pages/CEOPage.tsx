@@ -8,8 +8,9 @@ const FounderPage = () => {
             title="Founder, CEO, and Chairman | Redo Developers Inc."
             description="Meet Khaotungkulmethee Pattawee Drake and discover his journey in leading innovation and technology."
         >
-            <section className="py-8 px-4">
-                <div className="max-w-screen-xl mx-auto">
+            <section className="bg-page-pattern bg-cover bg-no-repeat">
+                <div className="py-8 bg-white/50 px-4">
+                <div className="max-w-screen-xl  mx-auto">
                     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                         <div>
                             <div className="max-w-xl w-full mb-8  mx-auto pb-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
@@ -261,7 +262,8 @@ const FounderPage = () => {
                             {/* Add more relevant sections as needed */}
                         </div>
                     </div>
-                </div>
+                    </div>
+                    </div>
             </section>
         </Seo>
     );

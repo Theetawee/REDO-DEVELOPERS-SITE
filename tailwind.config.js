@@ -4,9 +4,11 @@ export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
-            boxShadow: {
-                shadow: "3px 5px 40px -8px rgba(241, 131, 93, 0.7)",
+            backgroundImage: {
+                "page-pattern":
+                    "url('https://files.waanverse.com/images/gradbg.svg')",
             },
+
             colors: {
                 primary: {
                     100: "#fce0d7",
