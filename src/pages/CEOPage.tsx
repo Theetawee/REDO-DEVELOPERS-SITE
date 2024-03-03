@@ -12,11 +12,11 @@ const FounderPage = () => {
                 <div className="max-w-screen-xl mx-auto">
                     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                         <div>
-                            <div className="max-w-xl w-full mb-8  mx-auto py-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-                                <div className="relative mb-4">
+                            <div className="max-w-xl w-full mb-8  mx-auto pb-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+                                <div className="relative bg-primary-400 py-4 mb-4">
                                     <img
                                         src={Founder}
-                                        className="w-96 h-96 rounded-full mx-auto"
+                                        className="w-96 border-4 border-primary-100 h-96 rounded-full mx-auto"
                                         alt="Founder of Redo Developers Inc. Khaotungkulmethee Pattawee Drake"
                                     />
                                 </div>
