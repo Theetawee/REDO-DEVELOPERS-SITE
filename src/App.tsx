@@ -1,6 +1,8 @@
 import { createBrowserRouter,createRoutesFromElements,Route,RouterProvider} from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import { lazy } from "react";
+import { ErrorBoundary } from "react-error-boundary";
+import CommonError from "./components/common/CommonError";
 
 const HomePage = lazy(()=>import('./pages/HomePage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
@@ -29,9 +31,9 @@ const router=createBrowserRouter(
 
 const App = () => {
   return (
-    <>
+    <ErrorBoundary fallback={<CommonError/>}>
     <RouterProvider router={router} />
-    </>
+    </ErrorBoundary>
   )
 }
 
