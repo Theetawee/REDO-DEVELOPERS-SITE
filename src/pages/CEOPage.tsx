@@ -8,8 +8,8 @@ const FounderPage = () => {
             title="Founder, CEO, and Chairman | Redo Developers Inc."
             description="Meet Khaotungkulmethee Pattawee Drake and discover his journey in leading innovation and technology."
         >
-            <section className="bg-page-pattern bg-cover bg-no-repeat">
-                <div className="py-8 bg-white/50 px-4">
+            <section className="bg-page-pattern bg-center bg-cover bg-no-repeat">
+                <div className="py-8 bg-white/30 px-4">
                 <div className="max-w-screen-xl  mx-auto">
                     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                         <div>
