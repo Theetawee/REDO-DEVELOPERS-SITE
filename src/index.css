@@ -10,3 +10,7 @@
 .appbar-link.active{
     @apply text-primary-500 font-medium py-1 px-2 hover:bg-white rounded-none;
 }
+
+.title{
+    @apply font-medium;
+}
