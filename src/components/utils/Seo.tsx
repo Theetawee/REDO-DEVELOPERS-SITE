@@ -1,4 +1,7 @@
 import { Helmet } from "react-helmet-async";
+import ReactGA from "react-ga";
+import { useEffect } from "react";
+
 
 interface Props {
     children: React.ReactNode;
@@ -7,6 +10,12 @@ interface Props {
 }
 
 const Seo = ({ children, title, description }: Props) => {
+
+    useEffect(() => {
+        ReactGA.pageview(window.location.href);
+        },[])
+
+
     return (
         <>
             <Helmet>
