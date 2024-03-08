@@ -18,7 +18,6 @@ const LinkTag = ({
       value: 0,
       category: "Navigation",
     });
-      console.log('here')
     navigate(to);
   };
 
