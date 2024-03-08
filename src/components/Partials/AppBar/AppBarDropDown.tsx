@@ -2,8 +2,23 @@ import { Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
+import ReactGA from "react-ga";
 
 export default function AppBarDropDown() {
+
+const handleClick = (label: string) => {
+  ReactGA.event({
+    label: label,
+    action: "click",
+    value: 0,
+    category: "Navigation",
+  });
+};
+
+
+
+
+
     return (
         <div>
             <Popover className="relative">
@@ -37,7 +52,7 @@ export default function AppBarDropDown() {
                                         style={{ backgroundColor: "snow" }}
                                     >
                                         <div className="grid grid-cols-2 gap-4 mb-8">
-                                            <Popover.Button
+                                            <Popover.Button onClick={() => handleClick("Products and services")}
                                                 className={
                                                     "flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
                                                 }
@@ -56,7 +71,7 @@ export default function AppBarDropDown() {
                                                     Redo Developers Inc
                                                 </span>
                                             </Popover.Button>
-                                            <Popover.Button as={Link}
+                                            <Popover.Button onClick={() => handleClick("Company Profiles")} as={Link}
                                                 to="/profiles"
                                                 className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
                                             >
@@ -74,7 +89,7 @@ export default function AppBarDropDown() {
                                                 </span>
                                             </Popover.Button>
                                         </div>
-                                        <Popover.Button as={Link}
+                                        <Popover.Button onClick={() => handleClick("About us")} as={Link}
                                             to="/about"
                                             className="flow-root  rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500/50"
                                         >
