@@ -22,8 +22,8 @@ const LinkTag = ({
   };
 
   return (
-      <button onClick={() => handleClick(label)} className={className}>
-          <Link to={to}>{label }</Link>
+      <button onClick={() => handleClick(label)} className="outline-none border-0">
+          <Link to={to} className={className}>{label }</Link>
       
     </button>
   );
